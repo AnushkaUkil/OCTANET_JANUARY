@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-80">
+        <title>Booktrovert Website Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="image\logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">To be Read</a></li>
+                    <li><a href="#">Genre</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's Book O'clock<br>For <span>Booktroverts</span></h2>
+                    <pre>“There is more treasure in books than in all the pirate's loot on Treasure Island.” ― Walt Disney
+                        “Some books are so familiar that reading them is like being home again.” ― Louisa May Alcott
+                    </pre>
+                    <a href="#">Learn More</a>
+                </div>
+                    <div class="imgBox">
+                        <img src="img4.jpg" class="booktrovert">
+                    </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="image\thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#f1b7a4')"></li>
+                <li><img src="image\thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#9e7bb5')"></li>
+                <li><img src="image\thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#b4c5e4')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="image\fb.png"></a></li>
+                <li><a href="#"><img src="image\inst.png"></a></li>
+                <li><a href="#"><img src="image\twit.png"></a></li>
+            </ul>
+        </section>
+            
+        <script type="text/javascript">
+            function imgSlider(anything){
+                    document.querySelector('.booktrovert').src = anything;
+                }
+            function changeCircleColor(color) {
+                const circle = document.querySelector('.circle');
+                circle.style.background=color;
+                
+            }
+        </script>
+        
+    </body>
+</html>
